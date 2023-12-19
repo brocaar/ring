@@ -100,6 +100,12 @@ case $target in
     libc6-dev-mipsel-cross \
     qemu-user
   ;;
+--target=mips-unknown-linux-gnu)
+  install_packages \
+    gcc-mips-linux-gnu \
+    libc6-dev-mips-cross \
+    qemu-user
+  ;;
 --target=powerpc-unknown-linux-gnu)
   use_clang=1
   install_packages \
